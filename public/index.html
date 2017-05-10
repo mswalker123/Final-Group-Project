@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en" ng-app='myMod'>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="css/styles.css">
+    <link rel="stylesheet" type="text/css" href="css/animate.css">
+
+    <!-- initiated wow animation -->
+    <script src="js/wow.min.js"></script>
+    <script>
+        new WOW().init();
+    </script>
+
+    <title>Revun</title>
+    <!-- initiating email per directions from emailjs -->
+    <div ng-controller="controller1">
+        <script type="text/javascript" src="https://cdn.emailjs.com/dist/email.min.js"></script>
+        <script type="text/javascript">
+            (function() {
+                emailjs.init("user_Mecn5D2nlXkLiTm3a2uI9");
+            })();
+        </script>
+    </div>
+</head>
+
+<body ng-controller='controller1'>
+
+    <div class='container-fluid'>
+        <header class='header-logo'>
+            <div class='row'>
+                <div class='small-12 large-3 columns'>
+                    <div id='header-logo'>
+                        <img src='img/REVUN1.png' height="80" width="170">
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <jumbotron></jumbotron>
+        <toggle-view></toggle-view>
+        <ng-view></ng-view>
+
+
+        <bottom-footer></bottom-footer>
+        <div class="scroll-top-wrapper ">
+            <span class="scroll-top-inner glyphicon glyphicon-chevron-up">
+              <!-- <i></i> -->
+            </span>
+        </div>
+    </div>
+</body>
+
+<script src='https://ajax.googleapis.com/ajax/libs/angularjs/1.5.7/angular.min.js'></script>
+<script src='https://ajax.googleapis.com/ajax/libs/angularjs/1.5.7/angular-route.min.js'></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+<script src='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.js'></script>
+<script src='js/modules/module.js'></script>
+<script src='js/modules/config.js'></script>
+<script src='js/directives/customDirectives.js'></script>
+<script src='js/controllers/controller.js'></script>
+<script src='js/services/service.js'></script>
+<script src='js/script.js'></script>
+
+</html>

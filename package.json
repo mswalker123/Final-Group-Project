@@ -1,0 +1,27 @@
+{
+  "name": "Revun",
+  "version": "1.0",
+  "description": "Filter unwanted articles by words",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/bcupp/reverse-news.git"
+  },
+  "author": "Brad Cupp, Eric McCormick, Mishara Walker",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/bcupp/reverse-news/issues"
+  },
+  "homepage": "https://github.com/bcupp/reverse-news#readme",
+  "dependencies": {
+    "body-parser": "^1.17.1",
+    "express": "^4.15.2",
+    "ng-sanitize": "^1.5.7",
+    "node-readability": "^2.2.0",
+    "wowjs": "^1.1.3"
+  }
+}
